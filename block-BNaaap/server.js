@@ -6,6 +6,7 @@ let server = http.createServer(reqListener);
 
 // Listen to the response received
 function reqListener(req, res) {
+    console.log(req.method);
     res.statusCode = 201;
     res.setHeader('Content-type', 'text/html');
     // res.writeHead(200, {'Content-type': 'text/html'});
